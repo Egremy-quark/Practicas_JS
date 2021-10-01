@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea de HTML de Emmy</title>
+    <style>
+        table, th, td {
+           border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 400px;">
+        <thead><!--Estas etiqueta cumplen con la función de separar nuestra cabecera, con el cuerpo de nuestra tabla-->
+            <tr> <!--Table Road (Fila dentro de nuestra tabla)-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola Beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Curso Desarrollo web</td>
+                <td>$180</td>
+            </tr>
+            <tr>
+                <td>Curso Backend web</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>TOTAL: $380</td>
+        </tfoot>
+    </table>
+    </table>
+    <hr>
+    <!--Las etiquetas de heading únicamente se utilizan para los títulos-->
+    <h1>Primer heading</h1>
+    <h2>Segundo heading</h2>
+    <h3>Tercer heaging</h3>
+    <p>Un párrafo que pertenece al tercer heading</p>
+    
+    <hr> <!--Esta etiqueta es para separar nuestra estructura-->
+    
+    <h4>Cuarto heading</h4>
+    <p>Otro párrafo, pero este pertenece al cuarto heading</p>
+
+    <p> Lorem ipsum dolor sit amet<span style="color: rgb(255, 0, 34);"> adipisicing elit.</span>  <hr> Repellendus mollitia expedita tenetur natus temporibus, architecto atque nesciunt aliquam in corporis quo, quisquam earum? Sit deserunt est nobis nisi. Porro, sit.</p>
+
+    <!--Etiqueta ancle-->
+    <!--Agregaremos dos propiedades, la primera tiene la función de abrir el link en otra pestaña de tu navegador-->
+
+    <a target="_blank" href="https://www.google.com.mx">ir a google</a>
+
+    <hr>
+    <h4>Imagen de Batman</h4>
+    <!--En esta etiqueta no es necesario cerrarla, ya que está autocontenida-->
+    <img src="mg/Batman.jpg" height="200" width="400"/>
+
+   <ul><!--Lista no ordenada-->
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+   </ul>
+   <ol><!--Lista ordenada-->
+        <li value="50">Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>
+           <ol>
+               <li style="list-style-type: lower-latin;">sub Elemento1</li>
+               <li style="list-style-type: lower-latin;">sub Elemento2</li>
+               <li style="list-style-type: lower-latin;">sub Elemento3</li>
+           </ol>
+        </li>
+    </ol>   
+
+
+    <!--Etiqueta para recopilar información de los usuarios-->
+    <form action="/formulario"  method="GET">
+        <!--Dependiendo el método que utilizamos será la forma en la que se represente en el documento, cuando son muchos datos los que mandaremos es mejor el método POST-->
+
+        <label for="nombre">Nombre</label>
+        <!--con estas propideades tú vinculas la etiqueta label con tu etiqueta input-->
+        <input type="email" id="nombre" name="nombre" placeholder="name"/> 
+        <!--La propiedad name es sumamente importante ya que el servidor va a interpretar los datos del formulario, por el nombre que nosotros le pongamos a la propiedad name-->
+        <hr>
+            <label for="boton">boton</label>
+            <input type="submit" id="boton" >
+        <hr>
+            <label for="circulo">bolita</label>
+            <input type="radio" id="circulo">
+        <hr>
+            <label for="cuadrado">boton</label>
+            <input type="checkbox" id="cuadrado">
+        <hr>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo">
+        <hr>
+            <label for="archivo">Correo</label>
+            <input value="Perro" type="file" id="archivo">
+        <!--Con la propiedad "type" puedes cambiar el comportamiento de tu input, es decir, el valor que le des a esa propiedad, es la manera es la que se comportará tu input-->
+        <hr>
+
+        <label for="comentario">Ingrese su opinión</label>
+        <textarea name="comentario" id="comentario" placeholder="comenta" cols="50" rows="5">Esto es un texto por defecto</textarea>
+        <!--La etiqueta textarea cumple con la función de crear un área en el que podemos añadir texto dentro de nuestro archivo HTML-->
+
+        
+    
+        <!--    <input type="submit">  -->
+        <!--Cuando hacemos un botón es preferible utilizar otras etiquetas, ya que la etiqueta input está limitada cuando hablamos de estilos-->
+
+
+        <hr>
+        <button type="button">botón</button>
+        <hr>
+        <button type="reset"><img src="mg/Batman.jpg" width="50">Resetear información</button>
+        <hr>
+        <button type="submit">subir</button>
+        <!--Las funcionalidades de estas etiquetas se las daremos en JS-->
+          
+    </form>
+
+
+ </body>
+
+</body>
