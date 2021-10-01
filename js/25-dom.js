@@ -14,7 +14,7 @@ function cambiaColorClass(background, padding, color){
 var misClases = document.querySelector('.caja'); // .[nombreclase]
 
 
-misClases.style.background = "black";
+misClases.style.background = "blue";    
 misClases.style.padding = "8px";
 misClases.style.color = "white";
 
